@@ -1,14 +1,15 @@
 <template>
-  <div class="nav">
-    <span class="nav-item">👩‍💻 <router-link to="/about">About</router-link></span>
-    <span class="nav-item">🏢 <router-link to="/work">Work</router-link></span>
-    <span class="nav-item">📝 <router-link to="/teaching">Teaching</router-link></span>
-    <span class="nav-item">🎨 <router-link to="/projects">Projects</router-link></span>
-  </div>
+  <b-navbar-nav>
+    <b-navbar-item class="mx-2">👩‍💻 <router-link to="/about">About</router-link></b-navbar-item>
+    <b-navbar-item class="mx-2">🏢 <router-link to="/work">Work</router-link></b-navbar-item>
+    <b-navbar-item class="mx-2">📝 <router-link to="/teaching">Teaching</router-link></b-navbar-item>
+    <b-navbar-item class="mx-2">🎨 <router-link to="/projects">Projects</router-link></b-navbar-item>
+  </b-navbar-nav>
 </template>
 
 <style lang="scss" scoped>
-.nav-item {
-  margin: 0 10px;
+.router-link-exact-active {
+  color: #6797e5;
+  text-decoration: underline;
 }
 </style>

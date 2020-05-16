@@ -2,8 +2,12 @@
   <div class="home">
     <b-avatar src="../assets/avatar.png" size="200px" class="avatar"></b-avatar>
     <h1>Megan Belzner</h1>
-    <Nav />
-    <Contact />
+    <b-navbar>
+      <Nav />
+    </b-navbar>
+    <b-navbar>
+      <Contact />
+    </b-navbar>
   </div>
 </template>
 
