@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <Intro />
-    <Know />
-    <Done />
-    <Taught />
-    <Contact />
+    <Intro class="snap" />
+    <Know class="snap" />
+    <Done class="snap" />
+    <Taught class="snap" />
+    <Contact class="snap" />
   </div>
 </template>
 
@@ -42,5 +42,15 @@ $headings-font-family: 'Lilita One', sans-serif;
 
 * {
   box-sizing: border-box;
+}
+
+#app {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow: auto;
+}
+
+.snap {
+  scroll-snap-align: start;
 }
 </style>
