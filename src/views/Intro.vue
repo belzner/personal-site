@@ -46,12 +46,11 @@ export default {
 <style lang="scss" scoped>
 .intro {
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   display: grid;
   place-content: center;
   font-family: sans-serif;
-  background-color: #327ddf;
-  background-image: url('../assets/tile-327ddf.png');
+  background-color: #118ab2;
+  background-image: url('../assets/tile-118ab2.png');
   background-position: center;
   line-height: 1;
 }

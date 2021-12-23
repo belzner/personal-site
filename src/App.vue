@@ -1,21 +1,28 @@
 <template>
   <div id="app">
     <Intro />
+    <Know />
+    <Done />
+    <Taught />
+    <Contact />
   </div>
 </template>
 
 <script>
 import Intro from '@/views/Intro.vue';
+import Know from '@/views/Know.vue';
+import Done from '@/views/Done.vue';
+import Taught from '@/views/Taught.vue';
+import Contact from '@/views/Contact.vue';
 
 export default {
   name: 'App',
   components: {
     Intro,
-  },
-  computed: {
-    isHome() {
-      return this.$route.name === 'Home';
-    },
+    Know,
+    Done,
+    Taught,
+    Contact,
   },
 };
 </script>
