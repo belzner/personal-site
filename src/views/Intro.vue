@@ -51,7 +51,7 @@ export default {
   place-content: center;
   font-family: sans-serif;
   background-color: #327ddf;
-  background-image: url('../assets/tile-blue.png');
+  background-image: url('../assets/tile-327ddf.png');
   background-position: center;
   line-height: 1;
 }
