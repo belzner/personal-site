@@ -28,6 +28,7 @@ export default {
 </script>
 
 <style lang="scss">
+// Backgrounds from https://patternico.com/#uzIKpwXDPNP7Sujl
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
