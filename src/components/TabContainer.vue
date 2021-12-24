@@ -56,5 +56,16 @@ export default {
 /deep/ .content-column {
   background-color: rgba(255, 255, 255, 0.6);
   padding: 20px;
+  line-height: 24px;
+  height: 75vh;
+  overflow: auto;
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/deep/ .emphasize {
+  font-weight: 700;
 }
 </style>
