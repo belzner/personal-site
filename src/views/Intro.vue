@@ -48,7 +48,6 @@ export default {
   min-height: 100vh;
   display: grid;
   place-content: center;
-  font-family: sans-serif;
   background-color: #118ab2;
   background-image: url('../assets/tile-118ab2.png');
   background-position: center;
@@ -104,7 +103,7 @@ export default {
   place-items: center;
   font-weight: 700;
   font-size: 7rem;
-  letter-spacing: 0.17em;
+  letter-spacing: 0.2em;
   animation-delay: var(--anim-delay);
 
   span {

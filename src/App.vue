@@ -30,12 +30,12 @@ export default {
 <style lang="scss">
 // Backgrounds from https://patternico.com/#uzIKpwXDPNP7Sujl
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
 
 $font-size-base: 1.4rem;
 $link-color: #3d6bb5;
 $link-hover-color: #6797e5;
-$headings-font-family: 'Lilita One', sans-serif;
+$headings-font-family: 'Chela One', sans-serif;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/bootstrap-vue/src/index.scss';
