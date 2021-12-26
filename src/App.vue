@@ -30,11 +30,11 @@ export default {
 <style lang="scss">
 // Backgrounds from https://patternico.com/#uzIKpwXDPNP7Sujl
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-$font-size-base: 1.4rem;
 $link-color: #3d6bb5;
 $link-hover-color: #6797e5;
+$font-family-base: 'Open Sans', sans-serif;
 $headings-font-family: 'Chela One', sans-serif;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
