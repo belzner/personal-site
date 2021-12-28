@@ -1,5 +1,10 @@
 <template>
-  <div class="info-card" @click="flip" :ref="name">
+  <div class="info-card"
+    @click="flip()"
+    @mouseover="hover(true)"
+    @mouseout="hover(false)"
+    :ref="name"
+  >
     <div class="front">
       <slot name="header"><div></div></slot>
     </div>
@@ -20,6 +25,15 @@ export default {
   methods: {
     flip() {
       this.$refs[this.name].classList.toggle('flipped');
+    },
+    hover(isHover) {
+      this.$refs[this.name].children.forEach((child) => {
+        if (isHover) {
+          child.classList.add('hover');
+        } else {
+          child.classList.remove('hover');
+        }
+      });
     },
   },
 };
@@ -42,7 +56,7 @@ export default {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
     transition: transform 0.5s, box-shadow 0.5s;
 
-    &:hover {
+    &.hover {
       transform: translate(-5px, -7px) scale(1.02) rotateZ(0.5deg);
       box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.15);
     }
@@ -51,7 +65,7 @@ export default {
   .back {
     transform: rotateY(-180deg);
 
-    &:hover {
+    &.hover {
       transform: rotateY(-180deg) translate(-5px, -7px) scale(1.02) rotateZ(0.5deg);
     }
   }
@@ -60,7 +74,7 @@ export default {
     .front {
       transform: rotateY(180deg);
 
-      &:hover {
+      &.hover {
         transform: rotateY(180deg) translate(-5px, -7px) scale(1.02) rotateZ(0.5deg);
       }
     }
@@ -68,7 +82,7 @@ export default {
     .back {
       transform: rotateY(0deg);
 
-      &:hover {
+      &.hover {
         transform: rotateY(0deg) translate(-5px, -7px) scale(1.02) rotateZ(0.5deg);
       }
     }
