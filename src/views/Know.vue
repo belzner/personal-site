@@ -2,7 +2,7 @@
   <div class="know">
     <h1 class="header">Things I Know</h1>
     <div class="wrapper">
-      <InfoCard name="js">
+      <InfoCard>
         <template v-slot:header>
           <h2>Javascript, HTML, &amp; CSS</h2>
         </template>
@@ -12,7 +12,7 @@
           <p>I'm a fan of Vue, but I've also worked with React (and React Native), AngularJS, and Backbone.</p>
         </template>
       </InfoCard>
-      <InfoCard name="others">
+      <InfoCard>
         <template v-slot:header>
           <h2>PHP, SQL, Python, C++, Scheme, Assembly, LaTeX...</h2>
         </template>
@@ -84,33 +84,5 @@ export default {
   background-image: url('../assets/tile-ffd166.png');
   background-position: center;
   line-height: 1;
-}
-
-.header {
-  height: 15vh;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 5vh 5vh 0;
-  font-size: 4rem;
-}
-
-.wrapper {
-  height: 85vh;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 5vh;
-  position: relative;
-  bottom: 0;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 25px;
-  font-size: 1.05rem;
-  line-height: 1.1rem;
-}
-
-h2 {
-  font-size: 1.8rem;
-  font-family: 'Arial', sans-serif;
 }
 </style>

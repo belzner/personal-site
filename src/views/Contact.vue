@@ -1,50 +1,56 @@
 <template>
   <div class="contact">
+    <h1 class="header">Get In Touch</h1>
     <div class="wrapper">
-      <h1 class="header">Get In Touch</h1>
-      <div class="content">
-        <ul>
-          <li>Email</li>
-          <li>Linkedin</li>
-          <li>Github</li>
-        </ul>
-      </div>
+      <InfoCard :can-flip="false">
+        <template v-slot:header>
+          <h2>Email</h2>
+        </template>
+      </InfoCard>
+      <InfoCard :can-flip="false">
+        <template v-slot:header>
+          <h2>LinkedIn</h2>
+        </template>
+      </InfoCard>
+      <InfoCard :can-flip="false">
+        <template v-slot:header>
+          <h2>Twitter</h2>
+        </template>
+      </InfoCard>
+      <InfoCard :can-flip="false">
+        <template v-slot:header>
+          <h2>Github</h2>
+        </template>
+      </InfoCard>
     </div>
   </div>
 </template>
 
 <script>
+import InfoCard from '@/components/InfoCard.vue';
+
 export default {
   name: 'Contact',
+  components: {
+    InfoCard,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .contact {
-  min-height: 100vh;
-  font-family: sans-serif;
+  height: 100vh;
   background-color: #073b4c;
   background-image: url('../assets/tile-073b4c.png');
   background-position: center;
   line-height: 1;
 }
 
-.wrapper {
-  height: 100vh;
-  max-width: 1030px;
-  margin: 0 auto;
-  padding: 5vh;
-  font-size: 16px;
-}
-
 .header {
-  height: 10vh;
   color: #fff;
 }
 
-.content {
-  height: 75vh;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.6);
+.wrapper {
+  grid-template-columns: 1fr 1fr;
 }
 </style>

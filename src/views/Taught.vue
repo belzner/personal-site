@@ -1,34 +1,55 @@
 <template>
   <div class="taught">
-    <TabContainer header="Things I've Taught">
-      <b-tab title="Linguistics">
-        <div>Linguistics</div>
-      </b-tab>
-      <b-tab title="Computers">
-        <div>Computers</div>
-      </b-tab>
-      <b-tab title="Other Topics">
-        <div>Other Topics</div>
-      </b-tab>
-    </TabContainer>
+    <h1 class="header">Things I've Taught</h1>
+    <div class="wrapper">
+      <InfoCard>
+        <template v-slot:header>
+          <h2>Class 1</h2>
+        </template>
+      </InfoCard>
+      <InfoCard>
+        <template v-slot:header>
+          <h2>Class 2</h2>
+        </template>
+      </InfoCard>
+      <InfoCard>
+        <template v-slot:header>
+          <h2>Class 3</h2>
+        </template>
+      </InfoCard>
+      <InfoCard>
+        <template v-slot:header>
+          <h2>Class 4</h2>
+        </template>
+      </InfoCard>
+      <InfoCard>
+        <template v-slot:header>
+          <h2>Class 5</h2>
+        </template>
+      </InfoCard>
+      <InfoCard>
+        <template v-slot:header>
+          <h2>And More</h2>
+        </template>
+      </InfoCard>
+    </div>
   </div>
 </template>
 
 <script>
-import TabContainer from '@/components/TabContainer.vue';
+import InfoCard from '@/components/InfoCard.vue';
 
 export default {
   name: 'Taught',
   components: {
-    TabContainer,
+    InfoCard,
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .taught {
-  min-height: 100vh;
-  font-family: sans-serif;
+  height: 100vh;
   background-color: #06d6a0;
   background-image: url('../assets/tile-06d6a0.png');
   background-position: center;

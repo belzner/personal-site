@@ -3,7 +3,7 @@
     @click="flip()"
     @mouseover="hover(true)"
     @mouseout="hover(false)"
-    :ref="name"
+    ref="card"
   >
     <div class="front">
       <slot name="header"><div></div></slot>
@@ -17,17 +17,21 @@
 <script>
 export default {
   name: 'Know',
-  data() {
-    return {
-      name: String,
-    };
+  props: {
+    canFlip: {
+      type: Boolean,
+      default: true,
+    },
   },
   methods: {
     flip() {
-      this.$refs[this.name].classList.toggle('flipped');
+      if (!this.canFlip) {
+        return;
+      }
+      this.$refs.card.classList.toggle('flipped');
     },
     hover(isHover) {
-      this.$refs[this.name].children.forEach((child) => {
+      this.$refs.card.children.forEach((child) => {
         if (isHover) {
           child.classList.add('hover');
         } else {
