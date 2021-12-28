@@ -36,15 +36,30 @@
         <template v-slot:header>
           <h2>Emoji</h2>
         </template>
+        <template v-slot:content>
+          <p>I can tell you all about how emoji get made or the history of emoji appearances on different platforms.</p>
+          <p>I love to make custom Slack emoji, and muse about how people use emoji.</p>
+          <p>I've even made <a href="https://belzner.me/thinkifier" target="_blank" @click.stop="">a tool for creating custom thinking emojis</a>, which has been used liberally by my coworkers.</p>
+        </template>
       </InfoCard>
       <InfoCard>
         <template v-slot:header>
           <h2>Internet Culture</h2>
         </template>
+        <template v-slot:content>
+          <p>I find it fascinating how the designs of different social media and communication platforms change how we use them.</p>
+          <p>I love to contemplate how technology has changed how we communicate.</p>
+          <p>I even managed to write an entire formal academic essay analyzing a single meme for a class once.</p>
+        </template>
       </InfoCard>
       <InfoCard>
         <template v-slot:header>
           <h2>Pok&eacute;mon</h2>
+        </template>
+        <template v-slot:content>
+          <p>I've been into Pok&eacute;mon since the GBA era (but the best Pok&eacute;mon game is <em>Pok&eacute;mon Ranger: Shadows of Almia</em>).</p>
+          <p>In high school I <a href="https://web.archive.org/web/20110208052256/http://pokemonsquared.com/" target="_blank" @click.stop="">built my own Pok&eacute;mon fansite</a>, cementing my interest in coding.</p>
+          <p>I've also made several different Pok&eacute;mon halloween costumes, and proudly display my plush collection at home and the office.</p>
         </template>
       </InfoCard>
     </div>
