@@ -48,9 +48,6 @@ export default {
   min-height: 100vh;
   display: grid;
   place-content: center;
-  background-color: #118ab2;
-  background-image: url('../assets/tile-118ab2.png');
-  background-position: center;
   line-height: 1;
 }
 

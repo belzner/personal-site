@@ -1,28 +1,19 @@
 <template>
   <div id="app">
-    <Intro class="snap" />
-    <Know class="snap" />
-    <Done class="snap" />
-    <Taught class="snap" />
-    <Contact class="snap" />
+    <Intro />
+    <WebDevelopment />
   </div>
 </template>
 
 <script>
 import Intro from '@/views/Intro.vue';
-import Know from '@/views/Know.vue';
-import Done from '@/views/Done.vue';
-import Taught from '@/views/Taught.vue';
-import Contact from '@/views/Contact.vue';
+import WebDevelopment from '@/views/WebDevelopment.vue';
 
 export default {
   name: 'App',
   components: {
     Intro,
-    Know,
-    Done,
-    Taught,
-    Contact,
+    WebDevelopment,
   },
 };
 </script>
@@ -45,13 +36,9 @@ $headings-font-family: 'Chela One', sans-serif;
 }
 
 #app {
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-  overflow: auto;
-}
-
-.snap {
-  scroll-snap-align: start;
+  background-color: #118ab2;
+  background-image: url('./assets/tile-118ab2.png');
+  background-position: center;
 }
 
 .header {
@@ -64,7 +51,6 @@ $headings-font-family: 'Chela One', sans-serif;
 
 .wrapper {
   height: 85vh;
-  max-width: 1000px;
   margin: 0 auto;
   padding: 5vh;
   position: relative;
